@@ -20,6 +20,5 @@ public class TestBiPredicate {
         System.out.println("4 " + estSupOuEgal.or(estLaMoitie).test(1, 1));
         System.out.println("4 " + estSupOuEgal.or(estLaMoitie).test(4, 2));
         System.out.println("4 " + estSupOuEgal.or(estLaMoitie).test(2, 4));
-    
     }
 }
