@@ -11,7 +11,7 @@ import exo.lambda.Personne.Genre;
 /**
  * On veut obtenir les noms des hommes triés par ordre descendant de taille.
  * voir équivalent en stream :
- * {@link exo.streams.}
+ * {@link exo.streams.TestHommesTriDescendantParTailleStream}
  */
 public class TestHommesTriDescendantParTaille {
     public static void main(String[] args) {
