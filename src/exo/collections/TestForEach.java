@@ -6,7 +6,7 @@ import java.util.concurrent.atomic.LongAdder;
 
 /**
  * voir équivalent en Stream dans
- * {@link #TestStreamSomme10premiers}
+ * {@link exo.streams.TestStreamSomme10premiers}
  */
 public class TestForEach {
     public static void main(String[] args) {
