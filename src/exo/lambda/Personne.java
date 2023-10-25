@@ -1,7 +1,13 @@
 package exo.lambda;
 
 public class Personne {
+    public enum Genre {
+        HOMME, FEMME
+    };
+
     private String nom, prenom;
+    private int taille;
+    private Genre genre;
 
     public Personne() {
     }
@@ -9,6 +15,14 @@ public class Personne {
     public Personne(String nom, String prenom) {
         this.nom = nom;
         this.prenom = prenom;
+        this.genre = Genre.HOMME;
+    }
+
+    public Personne(String nom, String prenom, Genre genre, int taille) {
+        this.nom = nom;
+        this.prenom = prenom;
+        this.taille = taille;
+        this.genre = genre;
     }
 
     public String getNom() {
@@ -27,8 +41,24 @@ public class Personne {
         this.prenom = prenom;
     }
 
+    public int getTaille() {
+        return taille;
+    }
+
+    public void setTaille(int taille) {
+        this.taille = taille;
+    }
+
+    public Genre getGenre() {
+        return genre;
+    }
+
+    public void setGenre(Genre genre) {
+        this.genre = genre;
+    }
+
     @Override
     public String toString() {
-        return "Personne [nom=" + nom + ", prenom=" + prenom + "]";
+        return "Personne [nom=" + nom + ", prenom=" + prenom  + ", genre=" + genre + ", taille=" + taille + "]";
     }
 }
