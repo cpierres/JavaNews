@@ -1,5 +1,6 @@
 package exo.streams;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import exo.lambda.Personne;
@@ -9,7 +10,7 @@ import exo.lambda.Personne;
  */
 public class AdressePersonne {
     private String ville;
-    private List<Personne> personnes;
+    private List<Personne> personnes = new ArrayList<>();
 
     public String getVille() {
         return ville;
@@ -26,4 +27,11 @@ public class AdressePersonne {
     public void setPersonnes(List<Personne> personnes) {
         this.personnes = personnes;
     }
+
+    @Override
+    public String toString() {
+        return "AdressePersonne [ville=" + ville + ", personnes=" + personnes + "]";
+    }
+
+    
 }
