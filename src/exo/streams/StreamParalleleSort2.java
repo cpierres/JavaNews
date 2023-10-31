@@ -5,7 +5,11 @@ import java.util.stream.IntStream;
 
 /**
  * Si le nombre d'éléments à traiter est important, alors l'exécution de la
- * méthode sorted() se fait bien en parallèle.
+ * méthode sorted() se fait bien en parallèle.<br>
+ * Certaines opérations, comme reduce() ou collect() ont besoin de traitements
+ * supplémentaires lors de l'exécution du Stream en parallèle par rapport à leur
+ * exécution en séquentiel notamment pour agréger les résultats issus de chacun
+ * des threads.
  */
 public class StreamParalleleSort2 {
 
