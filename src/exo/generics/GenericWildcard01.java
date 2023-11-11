@@ -11,9 +11,9 @@ public class GenericWildcard01 {
 
     // Un ensemble contient uniquement le type Number ou sous-type de Number
     List<? extends Number> listNumbers = new ArrayList<Long>();
-    listNumbers = new ArrayList<Integer>();
+    List<? extends Number> listNumbers2 = new ArrayList<Integer>();
 
     KeyValue<String,?> keyValue = new KeyValue<String,Integer>("un",1);
-    keyValue = new KeyValue<String,String>("un","2");
+    KeyValue<String,?>keyValue2 = new KeyValue<String,String>("un","2");
 
 }
